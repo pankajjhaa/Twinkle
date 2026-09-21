@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Happy Birthday Twinkle! 🎉</title>
+<meta name="description" content="A warm, glowing celebration of Twinkle's birthday and our friendship." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Caveat:wght@600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<canvas id="confetti-canvas"></canvas>
+
+<div class="glow-cursor" id="glowCursor"></div>
+
+<!-- NAV DOTS -->
+<nav class="dot-nav" id="dotNav" aria-label="Section navigation">
+  <a href="#hero" class="dot active" data-label="Hero"></a>
+  <a href="#story" class="dot" data-label="Our Story"></a>
+  <a href="#gallery" class="dot" data-label="Gallery"></a>
+  <a href="#personality" class="dot" data-label="Personality"></a>
+  <a href="#wishes" class="dot" data-label="Wishes"></a>
+  <a href="#celebrate" class="dot" data-label="Celebrate"></a>
+  <a href="#closing" class="dot" data-label="Closing"></a>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div class="hero-bg"></div>
+  <div class="sparkle-field" id="sparkleField"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">✨ A Golden Little Celebration ✨</p>
+    <h1 class="hero-title">
+      <span class="line">Happy Birthday</span>
+      <span class="line accent">Twinkle!</span>
+    </h1>
+    <p class="hero-tagline">A Celebration of Friendship</p>
+    <p class="hero-sub">makeup artist. chaos gremlin. certified sunshine. my person.</p>
+    <a href="#story" class="hero-cta">
+      <span>Scroll for the whole glow-up story</span>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 4v16m0 0l-6-6m6 6l6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+  <div class="hero-fade"></div>
+</section>
+
+<!-- STORY / TIMELINE -->
+<section id="story" class="story">
+  <div class="section-head">
+    <p class="kicker">Chapter One</p>
+    <h2>From "Kinda Terrifying" to Best Friend</h2>
+    <p class="section-lede">The completely true, only slightly exaggerated story of how you became my person.</p>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-line"></div>
+
+    <div class="tl-item" data-align="left">
+      <div class="tl-dot">🐾</div>
+      <div class="tl-card">
+        <span class="tl-tag">Day 1</span>
+        <h3>The Animal Encounter</h3>
+        <p>I still don't fully know how to explain what happened the day we met — there was an animal involved, there was chaos involved, and somehow you were right in the middle of it, completely unbothered. I remember thinking: <em>who IS this girl.</em></p>
+      </div>
+    </div>
+
+    <div class="tl-item" data-align="right">
+      <div class="tl-dot">😳</div>
+      <div class="tl-card">
+        <span class="tl-tag">Week 1</span>
+        <h3>"Wait... She's Actually Hilarious?"</h3>
+        <p>Okay, I'll admit it — you seemed SO intimidating at first. That resting confidence, that "I will not be explaining myself" energy. And then you made a joke so unhinged and so funny that I nearly choked, and the whole intimidating thing just... evaporated.</p>
+      </div>
+    </div>
+
+    <div class="tl-item" data-align="left">
+      <div class="tl-dot">💄</div>
+      <div class="tl-card">
+        <span class="tl-tag">Month 1</span>
+        <h3>Bonding Over Makeup & Bad Decisions</h3>
+        <p>Somewhere between you doing my makeup "just really quick" (an hour later, still going) and us laughing way too loud in places we should've been quiet, it clicked — we weren't just hanging out anymore. We were <em>friends</em>. The real kind.</p>
+      </div>
+    </div>
+
+    <div class="tl-item" data-align="right">
+      <div class="tl-dot">💛</div>
+      <div class="tl-card">
+        <span class="tl-tag">Now</span>
+        <h3>Inseparable & Unbothered</h3>
+        <p>Now you're the person I text first, the one who tells me the truth even when I don't want it, and the one who somehow makes everything — glam or chaos or absolutely nothing at all — feel like an event. Scary-seeming stranger to best friend. Best plot twist ever.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="gallery">
+  <div class="section-head">
+    <p class="kicker">Chapter Two</p>
+    <h2>The Moments Worth Keeping</h2>
+    <p class="section-lede">Glam shots, candid chaos, and everything in between. (Swap in the real photos any time — just drop them into <code>/photos</code>.)</p>
+  </div>
+
+  <div class="gallery-grid">
+    <figure class="gallery-frame" data-caption="First meeting energy">
+      <div class="frame-inner placeholder">📸<span>First Meeting Moment</span></div>
+    </figure>
+    <figure class="gallery-frame" data-caption="Pure artistry">
+      <div class="frame-inner placeholder">💄<span>Makeup Artistry</span></div>
+    </figure>
+    <figure class="gallery-frame" data-caption="Squad energy">
+      <div class="frame-inner placeholder">👯<span>Group Photo Chaos</span></div>
+    </figure>
+    <figure class="gallery-frame" data-caption="Glam mode: on">
+      <div class="frame-inner placeholder">✨<span>Glam Shot</span></div>
+    </figure>
+    <figure class="gallery-frame" data-caption="Can't. Stop. Laughing.">
+      <div class="frame-inner placeholder">😂<span>Candid Laughs</span></div>
+    </figure>
+    <figure class="gallery-frame" data-caption="Friendship, defined">
+      <div class="frame-inner placeholder">💛<span>Friendship Goals</span></div>
+    </figure>
+  </div>
+</section>
+
+<!-- PERSONALITY -->
+<section id="personality" class="personality">
+  <div class="section-head">
+    <p class="kicker">Chapter Three</p>
+    <h2>Everything That Makes You, You</h2>
+  </div>
+
+  <div class="trait-grid">
+    <div class="trait-card"><span class="trait-emoji">✨</span><h3>Creative</h3><p>You see beauty where the rest of us see... a plain face. Certified visionary.</p></div>
+    <div class="trait-card"><span class="trait-emoji">😂</span><h3>Hilarious</h3><p>Unfiltered, unhinged, and somehow always exactly what the moment needed.</p></div>
+    <div class="trait-card"><span class="trait-emoji">💄</span><h3>Talented</h3><p>Genuinely gifted — your hands should be insured at this point.</p></div>
+    <div class="trait-card"><span class="trait-emoji">🌟</span><h3>Stunning</h3><p>Inside and out, and you already know it, and honestly? Deserved.</p></div>
+    <div class="trait-card"><span class="trait-emoji">💯</span><h3>Genuine</h3><p>No fake energy, ever. What you see is exactly what you get — and it's the best.</p></div>
+    <div class="trait-card"><span class="trait-emoji">🪄</span><h3>Magical</h3><p>You make ordinary days feel like something worth remembering.</p></div>
+  </div>
+</section>
+
+<!-- WISHES -->
+<section id="wishes" class="wishes">
+  <div class="section-head">
+    <p class="kicker">Chapter Four</p>
+    <h2>Birthday Wishes For You</h2>
+    <p class="section-lede">From the people lucky enough to know you.</p>
+  </div>
+
+  <div class="wishes-grid">
+    <div class="wish-card">
+      <p class="wish-quote">"She once did my eyeliner in a moving car and it still came out better than my professional appointments. Happy birthday to the most talented menace I know."</p>
+      <p class="wish-from">— someone who trusts you with sharp objects</p>
+    </div>
+    <div class="wish-card">
+      <p class="wish-quote">"I thought she hated me for the first two weeks. Turns out that's just her face. Best decision of my life not backing away."</p>
+      <p class="wish-from">— a reformed intimidated friend</p>
+    </div>
+    <div class="wish-card">
+      <p class="wish-quote">"Every plan is better when she's in it, every glam session is a therapy session, and every birthday of hers deserves a full celebration."</p>
+      <p class="wish-from">— someone who knows the real you</p>
+    </div>
+    <div class="wish-card">
+      <p class="wish-quote">"Talented, chaotic, loyal, and somehow always right about the highlighter placement. Never change."</p>
+      <p class="wish-from">— a certified fan</p>
+    </div>
+  </div>
+</section>
+
+<!-- CELEBRATE -->
+<section id="celebrate" class="celebrate">
+  <div class="section-head light">
+    <p class="kicker">Chapter Five</p>
+    <h2>Things That Make You Smile</h2>
+  </div>
+
+  <div class="smile-grid">
+    <button class="smile-chip" data-burst="gold">💄 Your Makeup Magic Moments</button>
+    <button class="smile-chip" data-burst="coral">🎶 That One Song You Blast Too Loud</button>
+    <button class="smile-chip" data-burst="peach">😂 Inside Jokes Nobody Else Gets</button>
+    <button class="smile-chip" data-burst="rose">🥂 Golden Hour Everything</button>
+    <button class="smile-chip" data-burst="gold">🐾 That Legendary Animal Encounter</button>
+    <button class="smile-chip" data-burst="coral">💛 Being Loved Exactly As You Are</button>
+  </div>
+  <p class="celebrate-hint">tap a chip for a little sparkle ✨</p>
+
+  <div class="cake-wrap">
+    <button id="blowCandles" class="cake" aria-label="Click to light candles">
+      <span class="cake-emoji">🎂</span>
+      <span class="candle-flames" id="candleFlames">🕯️🕯️🕯️</span>
+    </button>
+    <p class="cake-caption">click the cake, make a wish</p>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section id="closing" class="closing">
+  <div class="closing-glow"></div>
+  <div class="closing-content">
+    <span class="closing-heart" id="closingHeart">💛</span>
+    <h2>To the girl who seemed intimidating<br class="br-desktop"> and turned out to be my favorite person —</h2>
+    <p class="closing-body">
+      Thank you for the laughs that make my stomach hurt, the makeup skills that make me feel unstoppable,
+      and the kind of friendship that just quietly makes life better. Here's to another year of chaos, glam,
+      inside jokes, and being exactly, unapologetically you. I love you more than you'll ever let me say out loud.
+    </p>
+    <p class="closing-signoff">Happy Birthday, <span class="accent">Twinkle</span>. 🎉</p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
